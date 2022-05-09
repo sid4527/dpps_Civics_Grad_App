@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Civics Graduation Requirements Web App</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="dpps.jpg" class = "Logo" alt="DDPS LOGO">
+
+    <script src="script.js"></script>
+
+<h1>DPPS Civics - Graduation Requirement Tracker 2019-2020</h1>
+<h2>Voter Registration/Encouragement</h2>
+<p>Voter Encouragement & Registration is defined as interacting with potential voters to promote voting. <br>
+    Interaction could be asking people: whether they are registered to vote, going to vote, did vote or thanking them for voting.<br> 
+    This could also mean that you have handed out literature related to voting or registering people to vote.
+</p>
+
+<form action="/url" method="GET">
+    <label for="username"> When did this voter registration/encouragement work take place? <br>
+        If multiple dates, select the first date. </label><br><br>
+        <input type="text" id="voting_date" name="voting_date" placeholder = "mm/dd/yyyy" minlength="3" maxlength="20" required>
+    <button type="submit">Submit</button>  
+</form>
+
+<br><br>
+    
+<form action="/url" method="GET">
+    <label for="username"> Provide a 3-5 sentence overview of your voter registration/encouragement efforts.<br>
+        This must include where (you must at least state the city if not the exact location), the particular election<br> 
+        (candidate), and what you did. * </label><br><br>
+        <input type="text" id="overview" name="overview" placeholder = "Your Answer" minlength="3" maxlength="20" required>
+    <button type="submit">Submit</button>  
+</form>
+
+<form action="/url" method="GET">
+    <label for="username"> How many people did you actually get to register/vote? </label><br><br>
+        <input type="text" id="register" name="register" placeholder = "Your Answer" minlength="3" maxlength="20" required>
+    <button type="submit">Submit</button>  
+</form>
+
+<form action="/url" method="GET">
+    <label for="username"> About how many people did you speak with about registering/voting? </label><br><br>
+        <input type="text" id="voting" name="voting" placeholder = "Your Answer" minlength="3" maxlength="20" required>
+    <button type="submit">Submit</button>  
+</form>
+
+<a href="index.html"><button>Return Home</button></a>
+
+</body>
+</html>
