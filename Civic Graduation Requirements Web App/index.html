@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Civics Graduation Requirements Web App</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="dpps.jpg" class = "Logo" alt="DDPS LOGO">
+
+    <img src="dpps_civics_program_logo.jpeg" class = "Civics_Program_Logo" alt="DDPS CIVICS PROGRAM LOGO">
+
+    <script src="script.js"></script>
+
+    <div class="box box1">
+
+<h1>DPPS Civics - Graduation Requirement Tracker 2019-2020</h1>
+<h2><em> Complete one of these reports for each Civic Skill you complete on your campus.</em></h2>
+
+
+<form action="/url" method="GET">
+    <label for="username"> Please enter your name: </label><br><br>
+        <input type="text" id="username" name="username" placeholder = "Last, First" minlength="3" maxlength="20" required>
+    <button type="submit">Submit</button>  
+</form>
+
+<br><br>
+
+<label for="campus">Choose your Campus</label><br>
+<br>
+
+<select name="campus" id="campus_name">
+  <option value="dpchs">Democracy Prep Charter High School</option>
+  <option value="dphhs">Democracy Prep Harlem High School</option>
+  <option value="bphs">Bronx Prep High School</option>
+  <option value="dpachs">Democracy Prep at the Agassi Campus High School</option>
+  <option value="fphs">Freedom Prep High School</option>
+  <option value="dpehs">Democracy Prep Endurance High School</option>
+  <option value="hphs">Harlem Prep High School</option>
+</select>
+
+
+<br><br><br>
+<label for="civic_skill">Choose which Civic Skill are you requesting credit? <br><br>
+Note: "Informed Politician/Policy Monitoring" will be satisfied in Senior Seminar in American Democracy</label>
+<br><br>
+<select name="civic_skill" id="civic_skill">
+  <option value="vote">Voter Registration & Participation</option>
+  <option value="lobby">In-Person Lobbying</option>
+  <option value="canvass">Canvassing</option>
+  <option value="teach">Teaching & Mentoring</option>
+  <option value="volunteer">Volunteering/Service Learning/Internship</option>
+  <option value="fundraise">Cause Related Fundraising</option>
+  <option value="publication">Prepare a Piece for Publication</option>
+  <option value="testimony">Public Oral Testimony/Presentation/Panel</option>
+  <option value="marketing">Public Relations & Marketing</option>
+</select>
+<br><br>
+    
+<ol>
+<li><a href="voter_registration.html">Voter Registration Link</a></li>
+<li><a href="lobbying_Questions.html">Lobbying Questions Link</a></li>
+<li><a href="canvassing_Questions.html">Canvassing Questions Link</a></li>
+<li><a href="teaching_mentoring.html">Teaching and Mentoring Link</a></li>
+<li><a href="volunteering_service_internship.html">Volunteering/Service/Internship Link</a></li>
+<li><a href="cause_related_fundraising.html">Caused Related Fundraising Link</a></li>
+<li><a href="published_written_opinion.html">Published Written Opinion Link</a></li>
+<li><a href="public_oral_testimony.html">Public Oral Testimony Link</a></li>
+<li><a href="public_relations_marketing.html">Public Relations and Marketing Link</a></li>
+</ol>
+<br><br>
+<a href="voter_registration.html"><button>Next</button></a>
+</div>
+
+</body>
+</html>
