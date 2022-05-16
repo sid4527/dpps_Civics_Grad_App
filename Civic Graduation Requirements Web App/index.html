@@ -7,11 +7,10 @@
 <title>Civics Graduation Requirements Web App</title>
 <link rel="stylesheet" href="styles.css">
 </head>
+<fieldset>
 <body>
 
     <img src="images/dpps.jpg" class = "Logo" alt="DDPS LOGO">
-
-    <img src="images/dpps_civics_program_logo.jpeg" class = "Civics_Program_Logo" alt="DDPS CIVICS PROGRAM LOGO">
 
     <script src="script.js"></script>
 
@@ -21,11 +20,11 @@
 <h2><em> Complete one of these reports for each Civic Skill you complete on your campus.</em></h2>
 
 
-<form action="/url" method="GET">
+<!--<form action="/url" method="GET">
     <label for="username"> Please enter your name: </label><br><br>
-        <input type="text" id="username" name="username" placeholder = "Last, First" minlength="3" maxlength="20" required>
+        <input type="text" id="username" name="username" placeholder = "John Doe" minlength="3" maxlength="20" required>
     <button type="submit">Submit</button>  
-</form>
+</form>-->
 
 <br><br>
 
@@ -42,8 +41,17 @@
   <option value="hphs">Harlem Prep High School</option>
 </select>
 
+<br><br>
+
+<h3>Please submit proof of documentation for <br>
+the four core requirements listed below:</h3>
+  <p>Volunteering/Service Learning/Internship:</p><input type="file" name="file" onchange="javascript:document.getElementById('form').submit();"/>
+  <p>Write an essay on a social justice issue:</p><input type="file" name="file" onchange="javascript:document.getElementById('form').submit();"/>
+  <p>Voter Registration:</p><input type="file" name="file" onchange="javascript:document.getElementById('form').submit();"/>
+  <p>USCIS Exam:</p><input type="file" name="file" onchange="javascript:document.getElementById('form').submit();"/>
 
 <br><br><br>
+<!--
 <label for="civic_skill">Choose which Civic Skill are you requesting credit? <br><br>
 Note: "Informed Politician/Policy Monitoring" will be satisfied in Senior Seminar in American Democracy</label>
 <br><br>
@@ -59,8 +67,244 @@ Note: "Informed Politician/Policy Monitoring" will be satisfied in Senior Semina
   <option value="marketing">Public Relations & Marketing</option>
 </select>
 <br><br>
-    
-<ol>
+-->
+
+
+<div>
+<table id = "extracurriculars">
+  <tr>
+    <th>Extracurriculars</th>
+    <th>Check if Interested</th>
+  </tr>
+  <tr>
+    <td>Designing a lesson (Minimum components: Do Now, Guided Practice,Independent Practice, Exit Ticket) 
+      on a social justice issue/cultura identity topic to be delivered to an audience of individuals 
+      uninformed/marginally informed about the topic.</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+  </tr>
+  <tr>
+    <td>Serve as a tutor for an official Naturalization Test tutoring service.
+      Must provide documentation of work hours and having been hired.</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+  <tr>
+    <td>Delivering the previously planned lesson to an audience of individuals uninformed/marginally 
+      informed about the topic. (Minimum of 5 people, virtually or in-person).</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+  <tr>
+    <td>Delver a presentation to a group of DPPS scholars (virtually or in person).</td>
+    <td><input type="checkbox" id="check" name="check" unchecked></td>
+  </tr>
+  <tr>
+    <td>Prepare an artistic work for presentation. The work must be related to government/social justice 
+      or exposure to global cultures. If the work was not produced for a class, then the work must
+      be evaluated on an Acceptable/Unacceptable scale by an Arts teacher or Civics Coordinator.
+      (Evidence of effort, relevance to social justice movement)</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+  <tr>
+    <td>Look up a local, city, state, or federal representative, view their policies,
+      write why you agree with them or not, and explain whether you would vote for that person.</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+  <tr>
+    <td>Attend a town hall/public forum (hosted by a public office/official/nonprofit organization) 
+      and write a summary of the event (including a list of main speakers, agenda, what ideas/statements 
+      resonated with the attendee). Virtual town hall sessions are acceptable.</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+  <tr>
+    <td>Signing 3 petitions for a social justice related cause,explaining the importance of the desired action in 
+      the tracker submission. (Petitions in this category cannot be related to the school community. See 
+      Item 21 for school-related petitions)</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+  <tr>
+    <td>Complete 3 case reviews for major court cases (SCOTUS or lower courts) . 
+      **DPPS will provide a format for case reviews**</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+  <tr>
+    <td>Write a scripted piece to deliver virtually or in person. The piece must address an issue related 
+      to government or social justice or a topic pertaining to global citizenship.</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+  <tr>
+    <td>Donate to a fundraiser of your choosing.</td>
+    <td><input type="checkbox" id="check" name="check" unchecked></td>
+  </tr>
+  <tr>
+    <td>Organize a fundraiser to support a cause of your choosing</td>
+    <td><input type="checkbox" id="check" name="check" unchecked></td>
+  </tr>
+  <tr>
+    <td>Organizing an environmental activism/sustainability initiative (ex. Climate march, recycling drive, 
+      Earth Day programming, working with an urban/community garden)</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+  <tr>
+    <td>Participating in an environmental activism/sustainability initiative (ex. Climate march, 
+      recycling drive, Earth Day programming, working with an urban/community garden)</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+  <tr>
+    <td>Create and/or share information on voting rights during an election season or the census 
+      decennially. This can include disseminating official voting guides, highlighting relevant 
+      organizations/resources on social media (10 posts with no more than 2 posts per day on the selected 
+      topic), or spreading information on voter suppression/returning citizens/mail-in ballots/etc.</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+  <tr>
+    <td>Start a social media campaign that raises awareness of an issue related 
+      to government/social justice. (Accounts should be followed/reposted by more than 20 people and/or the 
+      account should consist of a minimum of 10 thoughtful posts on the same topic.)</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+  <tr>
+    <td>Signing a petition for a change in school policy, explaining the importance of the change in policy 
+      in the tracker submission.</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+  <tr>
+    <td>Set up a meeting with a school administrator to discuss an issue 
+      related to the school's culture or policies</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+  <tr>
+    <td>Starting a clubg or organization that did not previously exist on campus. 
+      The organization must meet at least 2 times a month for at least four months.</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+  <tr>
+    <td>Complete a response to the annual Civics Essay Prompt</td>
+    <td><input type="checkbox" id="check" name="check" unchecked></td>
+  </tr>
+  <tr>
+    <td>Attend 4 DPPS Civics network-wide events (panel discussions, screenings, town halls) and 
+      complete a reflection for each event attended.</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+  <tr>
+    <td>Participating in/helping organize/setting up the "Winston Perez-Ventura Homecoming Classic" Fundraiser 
+      basketball game</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+  <tr>
+    <td>Attending and donating to the "Winston Perez-Ventura Homecoming Classic" Fundraiser basketball 
+      game *Participants and organizers of the game are not eligible for these points, 
+      as they have already earned 2 points in this category.*</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+  <tr>
+    <td>Participating in a service project through a DPPS athletic team</td>
+    <td><input type="checkbox" id="check" name="check" unchecked></td>
+  </tr>
+  <tr>
+    <td>Leading a Town Hall (virtually or in person) or helping organize, set up, or clean up a 
+      campus event (ex. Korean Street Festival, sister school exchange, fundraiser dances) 
+      *Student Council Members are not eligible for this category, as they already earn points for membership*</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+  <tr>
+    <td>Read and complete a written reflection for 10 articles from international news sources.</td>
+    <td><input type="checkbox" id="check" name="check" unchecked></td>
+  </tr>
+  <tr>
+    <td>Advertise for a cause or an event by distributing fliers, reposting social media posts, or 
+      emailing contacts to raise awareness of the cause/event.</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+  <tr>
+    <td>Summarize and respond to a total of 10  domestic news articles. Half of the sources used must 
+      come from left leaning publications, and half must come from right-leaning publications. 
+      All publications must be reliable news sources. (Scholars may visit: https://www.adfontesmedia.com/ 
+      to assess where their selected publications fall on the spectrum of political ideology).</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+  <tr>
+    <td>Establish a LinkedIn account and invite 20 individuals in fields related to your professional 
+      and political interests.</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+  <tr>
+    <td>Complete the DPPS CTW Project Database survey form (describing the literature review thesis 
+      and the nature of the project)</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+  <tr>
+    <td>"Meet with/present to representative bodies or public officials in government positions.
+      *DPPS must create a guide and coordinate opportunities for scholars to complete this requirement*"</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+  <tr>
+    <td>Serve as an active member of the DPPS Speech and Debate Team for a full academic year.</td>
+    <td><input type="checkbox" id="check" name="check" unchecked></td>
+  </tr>
+  <tr>
+    <td>erving on the Student Council for a full term (from the election to the completion of 
+      the academic year).</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+  <tr>
+    <td>Register to vote in an election.</td>
+    <td><input type="checkbox" id="check" name="check" unchecked></td>
+  </tr>
+  <tr>
+    <td>Complete training for/serve as a poll worker</td>
+    <td><input type="checkbox" id="check" name="check" unchecked></td>
+  </tr>
+  <tr>
+    <td>Share an "I Voted" selfie with campus Civics Coordinator.</td>
+    <td><input type="checkbox" id="check" name="check" unchecked></td>
+  </tr>
+  <tr>
+    <td>Creating a petition for a change in school policy that gathers over 20 signatures.</td>
+    <td><input type="checkbox" id="check" name="check" unchecked></td>
+  </tr>
+  <tr>
+    <td>Attend a protest and submit a photo of yourself at the event. Include a description 
+      of your reason for attending in the tracker.</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+  <tr>
+    <td>Give a presentation to an audience of more than 10 people, or speak on a panel discussion. 
+      (Virtual or in person) A campus town hall qualifies for this requirement.</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+  <tr>
+    <td>Editing or contributing regularly (more than 4 issues) to a student publication on campus</td>
+    <td><input type="checkbox" id="check" name="check" unchecked></td>
+  </tr>
+  <tr>
+    <td>Have a work published in a publication outside of Democracy Prep Public Schools</td>
+    <td><input type="checkbox" id="check" name="check" unchecked></td>
+  </tr>
+  <tr>
+    <td>Tutoring someone who is not a family member for a total of 5 hours (maximum increment of 
+      1 hour per session).</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+  <tr>
+    <td>Participate in a Global Citizens Trip and share reflection essay on the experience.</td>
+    <td><input type="checkbox" id="check" name="check" unchecked></td>
+  </tr>
+  <tr>
+    <td>Attending a service learning trip through the Global Citizens Program (Ecuador) or a program approved 
+      by the Civics and/or Global Citizens Program qualifies for graduation requirement points.</td>
+      <td><input type="checkbox" id="check" name="check" unchecked></td>
+    </tr>
+</table>
+
+<br>
+<button id="Submit">Submit</button>
+</div>
+
+
+<br><br>
+<footer><img src="images/dpps_civics_program_logo.jpeg" class = "Civics_Program_Logo" alt="DDPS CIVICS PROGRAM LOGO"></footer>
+
+<!--
 <li><a href="voter_registration.html">Voter Registration Link</a></li>
 <li><a href="lobbying_Questions.html">Lobbying Questions Link</a></li>
 <li><a href="canvassing_Questions.html">Canvassing Questions Link</a></li>
@@ -72,8 +316,9 @@ Note: "Informed Politician/Policy Monitoring" will be satisfied in Senior Semina
 <li><a href="public_relations_marketing.html">Public Relations and Marketing Link</a></li>
 </ol>
 <br><br>
-<a href="voter_registration.html"><button>Next</button></a>
-</div>
+<a href="voter_registration.html"><button>Next</button></a> -->
 
+</div>
+</fieldset>
 </body>
 </html>
